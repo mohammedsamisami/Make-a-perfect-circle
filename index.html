@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Circle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="rating"></div>
+    <input type="color" id="colorPicker" value="#00ff00">
+    <input type="range" id="lineWidth" min="1" max="10" value="5">
+    <button id="clearCanvas">Clear Canvas</button>
+
+    <!-- Glowing "Make a Perfect Circle" Text -->
+    <div style="position: absolute; top: 50px; left: 50%; transform: translateX(-50%); font-size: 24px; color: #fff; 
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000, 
+                0 0 40px #ff00ff, 0 0 80px #ff00ff, 0 0 120px #ff00ff;">
+        Make a Perfect Circle
+    </div>
+
+    <!-- ASCII Art -->
+    <div style="position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); font-family: monospace; color: #ff66cc; font-size: 14px; 
+    text-shadow: 0 0 8px #ff66cc, 
+                0 0 15px #ff66cc, 
+                0 0 20px #ff3399, 
+                0 0 25px #ff3399, 
+                0 0 40px #ff3399, 
+                0 0 50px #ff3399, 
+                0 0 70px #ff3399, 
+                0 0 100px #ff00cc, 
+                0 0 150px #ff00cc;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.9)); padding: 10px; border-radius: 10px;">
+    <pre>
+        .--.            .--.
+        ( (`\\."--``--".//`) )
+         '-.   __   __    .-'
+          /   /__\ /__\   \
+         |    \ 0/ \ 0/    |   
+         \     `/   \`     /
+          `-.  /-"""-\  .-`
+            /  '.___.'  \
+            \     I     /
+             `;--'`'--;`
+               '.___.'
+    </pre>
+</div>
+
+    
+
+    <!-- Glowing Text with LinkedIn Link -->
+    <div style="position: absolute; top: 10px; right: 10px; font-size: 14px; color: #fff; 
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000, 
+                0 0 40px #ff00ff, 0 0 80px #ff00ff, 0 0 120px #ff00ff;">
+        Made by Mohammed Sami | 
+        <a href="https://www.linkedin.com/in/mohammed-sami-a1582024b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+        style="color: #ffcc00; text-decoration: none; text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 20px #ffcc00;">
+            LinkedIn
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
